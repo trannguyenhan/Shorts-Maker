@@ -1,6 +1,8 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 <a href = "https://www.paypal.com/donate/?hosted_button_id=5JK8CUWFUU9B6">![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)</a>
 
+See channel create by this project: [https://www.youtube.com/@DeManejarChannel/shorts](https://www.youtube.com/@DeManejarChannel/shorts)
+
 # Quote Video Maker for Shorts/Reels/TikTok
 <h3>This script creates high-quality vertical quotes videos (1920x1080) in about 15secs per video!</h3>
 
