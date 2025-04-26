@@ -25,7 +25,7 @@ def create_dirs(output_folder, customer_name, posts=True):
 
 
 def create_videos(video_folder, audio_folder, json_file, fonts_dir, output_folder, text_source_font, image_file: str,
-                  customer_name, number_of_videos, fonts: Fonts, posts=False):
+                  customer_name, number_of_videos, fonts: Fonts, posts=False, isShell=True):
     json_data = json_handler.get_data(json_file)
     verses: str = json_data[0]
     refs: str = json_data[1]
@@ -109,7 +109,7 @@ def create_videos(video_folder, audio_folder, json_file, fonts_dir, output_folde
                      video_file=video_file, audio_file=audio_file, image_file=image_file,
                      font_file=font_file, font_size=font_size, font_chars=font_chars,
                      posts=posts,
-                     output_path=output_path, file_name=file_name)
+                     output_path=output_path, file_name=file_name, isShell=isShell)
 
         spreadsheet_col1.append(file_name.strip("/"))
         spreadsheet_col2.append(text_source)
@@ -136,7 +136,7 @@ def create_videos(video_folder, audio_folder, json_file, fonts_dir, output_folde
 
 def create_video(text_verse, text_source, text_source_font, text_source_for_image, video_file: str, audio_file,
                  image_file,
-                 font_file, font_size, font_chars, output_path, file_name, posts=True):
+                 font_file, font_size, font_chars, output_path, file_name, posts=True, isShell=True):
     # Coordinates of logo image and text2 clips
     image_y = 0
     image_text_source_y = 800
@@ -179,7 +179,7 @@ def create_video(text_verse, text_source, text_source_font, text_source_for_imag
     # fix bug that ':' and beyond wasn't showing on screen
     text_source = text_source.replace(':', '\:')
     output_folder = output_path
-    output_path += f"/{file_name}"
+    output_path += f"{file_name}"
     # FFMPEG command to overlay images and text onto input video
     ffmpeg_command = (f'ffmpeg -loglevel error -stats -y -loop 1 -i "{image_file}" -i "{audio_file}" '
                       f'-i "{video_file}" -i "{created_verse_image}" -r 24 -filter_complex '
@@ -201,8 +201,10 @@ def create_video(text_verse, text_source, text_source_font, text_source_for_imag
     #                   f'-t {video_duration} -map "[v3]" -map 1 -c:v libx264 -preset veryfast -crf 18 "{output_path}"')
 
     # Run FFMPEG command
+    print("Command: " + ffmpeg_command)
     try:
-        subprocess.check_call(ffmpeg_command)
+        subprocess.check_call(ffmpeg_command, shell=isShell)
+        print("Output: " + output_path)
     except subprocess.CalledProcessError as e:
         print(f"An error occurred: {e}")
         sys.exit()
