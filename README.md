@@ -18,7 +18,7 @@ See channel create by this project: [https://www.youtube.com/@DeManejarChannel/s
 
 <h2 id="demo">🎥 Demo</h2>
 
-https://github.com/SamuraiPolix/ShortsMaker/assets/52662032/fb67c274-8701-482a-a557-466ce4b9a9ef
+[https://www.youtube.com/@DeManejarChannel/shorts](https://www.youtube.com/@DeManejarChannel/shorts)
 
 
 <h2 id="about">🧐 About</h2>
@@ -68,9 +68,10 @@ json_file = f"{project_dir}/sources/verses_data/love_data.json"
 <h2 id="results">🎥 Final Results</h2>
 
 After running the script you will get these 3 files:
-1. The edited video file.
+1. The edited video file, see video in channel.
 
-   https://github.com/SamuraiPolix/ShortsMaker/assets/52662032/1640ba4f-13c5-4698-9f2f-bcbfacb9b908
+   [https://www.youtube.com/@DeManejarChannel/shorts](https://www.youtube.com/@DeManejarChannel/shorts)
+
 3. A spreadsheet containing all the File names, verses, and references, to make it easier to find the video you want.
 
    ![image](https://github.com/SamuraiPolix/ShortsMaker/assets/52662032/6b597a1a-d7e0-495b-8f65-b6852eeb04a1)
@@ -81,3 +82,7 @@ After running the script you will get these 3 files:
 <h2 id="note">🗒️ Note</h2>
 
 Note that this script is very basic as of now. I added **Text-to-Speak** in a later version which I will hopefully post soon. If you want to contribute, you are free to do so and you may even fork and improve this repository.
+
+## Refer
+
+Project develop continue from [https://github.com/SamuraiPolix/Shorts-Maker](https://github.com/SamuraiPolix/Shorts-Maker).
