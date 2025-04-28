@@ -1,5 +1,5 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-<a href = "https://www.paypal.com/donate/?hosted_button_id=5JK8CUWFUU9B6">![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)</a>
+<a href = "https://paypal.me/cuocsongandanh?country.x=VN&locale.x=vi_VN">![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)</a>
 
 See channel create by this project: [https://www.youtube.com/@DeManejarChannel/shorts](https://www.youtube.com/@DeManejarChannel/shorts)
 
